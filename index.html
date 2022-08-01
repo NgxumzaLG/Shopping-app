@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Shopping App</title>
+   <link rel="icon" href="./assets/icon-192.png" type="image/x-icon">
+   <link rel="stylesheet" href="./index.css">
+
+   <script src="./index.js" defer></script>  
+</head>
+<body>
+   <nav>
+      <p>My List</p>
+   </nav>
+
+   <div class="container">
+      <form id="itemForm">
+         <label for="name">
+            Name of Item:
+            <input type="text" id="nameInput" name="name" required>
+         </label>
+
+         <label for="quantity">
+            Quantity:
+            <input type="number" id="quantityInput" name="quanity" value="1">
+         </label>
+
+         <label for="price">
+            Price:
+            <input type="text" id="priceInput" name="price" value="0">
+         </label>
+
+         <button type="submit" id="addItemButton">Add Item</button>
+      </form>
+   </div>
+
+   <div id="itemsDiv">
+      <div class="item">
+         <label>
+            <input type="checkbox" class="checkbox" checked>
+         </label>
+
+         <div class="itemInfo">
+            <p>Fruit Juice</p>
+            <p>R5 x 3</p>
+         </div>
+
+         <button class="deleteButton">X</button>
+      </div>
+
+      <div class="item purchased">
+         <label>
+            <input type="checkbox" class="checkbox" checked>
+         </label>
+
+         <div class="itemInfo">
+            <p>Fruit Juice</p>
+            <p>R5 x 3</p>
+         </div>
+
+         <button class="deleteButton">X</button>
+      </div>
+   </div>
+
+   <div id="totalPriceDiv">Total Price: <strong>R</strong>15</div>
+   
+</body>
+</html>
