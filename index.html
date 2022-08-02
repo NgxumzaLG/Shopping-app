@@ -8,6 +8,7 @@
    <link rel="icon" href="./assets/icon-192.png" type="image/x-icon">
    <link rel="stylesheet" href="./index.css">
 
+   <script src="./dexie.min.js"></script>
    <script src="./index.js" defer></script>  
 </head>
 <body>
@@ -37,34 +38,9 @@
    </div>
 
    <div id="itemsDiv">
-      <div class="item">
-         <label>
-            <input type="checkbox" class="checkbox" checked>
-         </label>
-
-         <div class="itemInfo">
-            <p>Fruit Juice</p>
-            <p>R5 x 3</p>
-         </div>
-
-         <button class="deleteButton">X</button>
-      </div>
-
-      <div class="item purchased">
-         <label>
-            <input type="checkbox" class="checkbox" checked>
-         </label>
-
-         <div class="itemInfo">
-            <p>Fruit Juice</p>
-            <p>R5 x 3</p>
-         </div>
-
-         <button class="deleteButton">X</button>
-      </div>
    </div>
 
-   <div id="totalPriceDiv">Total Price: <strong>R</strong>15</div>
+   <div id="totalPriceDiv"></div>
    
 </body>
 </html>
