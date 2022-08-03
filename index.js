@@ -24,7 +24,7 @@ const populateItemsDiv = async () => {
             <p><strong>R</strong> ${item.price} x ${item.quantity}</p>
          </div>
 
-         <button class="deleteButton">X</button>
+         <button class="deleteButton" onclick="removeItem(${item.id})">X</button>
       </div>
    `
       )
@@ -55,3 +55,8 @@ const toggleItemStatus = async (event, id) => {
    await db.items.update(id, { isPurchased: !!event.target.checked });
    await populateItemsDiv();
 };
+
+const removeItem = async (id) => {
+   await db.items.delete(id)
+   await populateItemsDiv()
+}
