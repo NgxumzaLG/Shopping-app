@@ -7,7 +7,6 @@ const totalPriceDiv = document.getElementById('totalPriceDiv');
 
 const populateItemsDiv = async () => {
    const allItems = await db.items.reverse().toArray();
-   console.log(allItems);
 
    itemsDiv.innerHTML = allItems
       .map(
